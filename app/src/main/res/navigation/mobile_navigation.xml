@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_news">
+
+    <fragment
+        android:id="@+id/nav_news"
+        android:name="pl.lubianka_v4.ui.news.NewsFragment"
+        android:label="Aktualności"
+        tools:layout="@layout/fragment_news" />
+
+    <fragment
+        android:id="@+id/nav_culture"
+        android:name="pl.lubianka_v4.ui.culture.CultureFragment"
+        android:label="Kultura"
+        tools:layout="@layout/culture_fragment" />
+    <fragment
+        android:id="@+id/nav_services"
+        android:name="pl.lubianka_v4.ui.services.ServicesFragment"
+        android:label="Usługi"
+        tools:layout="@layout/fragment_gallery" />
+    <fragment
+        android:id="@+id/nav_transport"
+        android:name="pl.lubianka_v4.ui.transport.TransportFragment"
+        android:label="Transport"
+        tools:layout="@layout/transport_fragment" />
+    <fragment
+        android:id="@+id/nav_info"
+        android:name="pl.lubianka_v4.ui.info.InfoFragment"
+        android:label="Informacja"
+        tools:layout="@layout/info_fragment" />
+</navigation>
